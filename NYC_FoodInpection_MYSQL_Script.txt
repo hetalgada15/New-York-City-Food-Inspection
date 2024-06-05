@@ -1,0 +1,51 @@
+--
+-- ER/Studio Data Architect SQL Code Generation
+-- Project :      DATA MODEL
+--
+-- Date Created : Sunday, February 12, 2023 18:26:25
+-- Target DBMS : MySQL 8.x
+--
+
+-- 
+-- TABLE: NYC_StagingTable 
+--
+
+CREATE TABLE NYC_StagingTable(
+    RecordID                 INT,
+    CAMIS                    INT,
+    DBA                      NATIONAL VARCHAR(95),
+    BORO                     VARCHAR(13),
+    BUILDING                 NATIONAL VARCHAR(10),
+    STREET                   VARCHAR(40),
+    ZIPCODE                  CHAR(5),
+    PHONE                    CHAR(12),
+    `CUISINE DESCRIPTION`    VARCHAR(30),
+    `INSPECTION DATE`        CHAR(10),
+    ACTION                   VARCHAR(130),
+    `VIOLATION CODE`         CHAR(5),
+    `VIOLATION DESCRIPTION`  NATIONAL VARCHAR(940),
+    `CRITICAL FLAG`          CHAR(14),
+    SCORE                    TINYINT,
+    GRADE                    CHAR(1),
+    `GRADE DATE`             VARCHAR(10),
+    `RECORD DATE`            CHAR(10),
+    `INSPECTION TYPE`        VARCHAR(59),
+    Latitude                 FLOAT(8, 0),
+    Longitude                FLOAT(8, 0),
+    `Community Board`        SMALLINT,
+    `Council District`       CHAR(2),
+    `Census Tract`           CHAR(6),
+    BIN                      INT,
+    BBL                      BIGINT,
+    NTA                      CHAR(4),
+    `Location Point`         BIT(1),
+    DI_CreateDT              DATETIME,
+    DI_WorkflowFileName      NATIONAL VARCHAR(18),
+    DateTime_Out             DATE,
+    DateTime_Out2            DATE,
+    DateTime_Out3            DATE
+)ENGINE=MYISAM
+;
+
+
+
